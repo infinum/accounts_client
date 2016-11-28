@@ -15,7 +15,7 @@ module Infinum
     end
 
     def client
-      @client ||= Client.new(config)
+      @client ||= Client.new
     end
 
     class Config # :nodoc:

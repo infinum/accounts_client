@@ -63,8 +63,8 @@ module Infinum
 
       def failure!(response)
         raise(Unauthorized, 'Unrecognized app') if response.code == 401
-        raise raise Forbidden, 'Invalid credentials' if response.code == 403
-        raise Error, 'Invalid request'
+        raise(Forbidden, 'Invalid credentials') if response.code == 403
+        raise(Error, 'Invalid request')
       end
     end
   end
