@@ -1,7 +1,26 @@
-require "infinum/accounts/version"
+require 'httparty'
+require 'infinum/accounts/client'
+require 'infinum/accounts/request'
+require 'infinum/accounts/user'
+require 'infinum/accounts/version'
 
 module Infinum
-  module Accounts
-    # Your code goes here...
+  module Accounts # :nodoc:
+    def self.config
+      @config ||= Config.new
+    end
+
+    def self.setup
+      yield config if block_given?
+    end
+
+    def client
+      @client ||= Client.new(config)
+    end
+
+    class Config # :nodoc:
+      attr_accessor :url
+      attr_accessor :app_id
+    end
   end
 end

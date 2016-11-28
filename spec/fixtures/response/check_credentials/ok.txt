@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+X-Meta-Request-Version: 0.3.0
+X-UA-Compatible: IE=Edge
+ETag: "06f6e168d72c73f53482f4b9045fb70a"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 531b668f36df7e102493781064a942d7
+X-Runtime: 0.193715
+Date: Fri, 25 Nov 2016 06:58:20 GMT
+Connection: close
+
+{"user":{"email":"harry.hole@example.com","first_name":"Harry","id":1,"last_name":"Hole"}}

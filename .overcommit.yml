@@ -1,0 +1,28 @@
+CommitMsg:
+  CapitalizedSubject:
+    enabled: false
+  HardTabs:
+    enabled: true
+
+PreCommit:
+  BundleAudit:
+    enabled: true
+
+  BundleCheck:
+    enabled: true
+
+  RuboCop:
+    enabled: true
+    on_warn: fail
+
+  TrailingWhitespace:
+    enabled: true
+    exclude:
+      - 'spec/fixtures/response/**/*.txt'
+
+  HardTabs:
+    enabled: true
+
+PrePush:
+  RSpec:
+    enabled: true
