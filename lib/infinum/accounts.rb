@@ -14,7 +14,7 @@ module Infinum
       yield config if block_given?
     end
 
-    def client
+    def self.client
       @client ||= Client.new
     end
 
