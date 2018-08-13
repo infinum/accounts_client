@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Infinum Accounts api client.'
   spec.description   = 'Infinum Accounts api client.'
-  spec.homepage      = 'TODO: https://github.com/'
+  spec.homepage      = 'https://github.com/infinum/accounts_client'
 
   spec.files         = `git ls-files -z`.split("\x0")
                                         .reject { |f| f.match(%r{^(test|spec|features)/}) }
